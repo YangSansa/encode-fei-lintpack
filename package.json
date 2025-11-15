@@ -1,0 +1,40 @@
+{
+  "name": "root",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "init": "pnpm install",
+    "clean": "lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "depoly": "bash depoly.sh",
+    "publish": "lerna publish",
+    "lint": "markdownlint read.md",
+    "changelog": "conventional-changelog -p angular -i changelog.md -s",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "markdownlint": "^0.39.0",
+    "markdownlint-cli": "^0.45.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/theme-default": "2.0.0-rc.118",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "husky": "^9.1.7",
+    "lerna": "^9.0.0",
+    "sass-embedded": "^1.93.3",
+    "vue": "^3.5.24",
+    "vuepress": "2.0.0-rc.26"
+  }
+}

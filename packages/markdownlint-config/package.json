@@ -1,0 +1,14 @@
+{
+  "name": "feicode-fei-markdownlint-config",
+  "version": "1.0.0",
+  "description": "技术博客 文档规范",
+  "homepage": "",
+  "author": "yangif <19803006837@163.com>",
+  "main": "index.json",
+  "scripts": {
+    "test": "node ./__tests__/markdownlint-config.test.js"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.39.0"
+  }
+}

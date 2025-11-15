@@ -1,0 +1,14 @@
+{
+  "name": "feicode-fei-commitlint-config",
+  "version": "1.0.0",
+  "description": "技术博客 GIT规范",
+  "homepage": "",
+  "author": "yangif <19803006837@163.com>",
+  "main": "index.js",
+  "scripts": {
+   
+  },
+  "peerDependencies": {
+    "conventional-changelog-conventionalcommits": "^9.1.0"
+  }
+}
