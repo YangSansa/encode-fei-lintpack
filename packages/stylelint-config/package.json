@@ -1,0 +1,17 @@
+{
+  "name": "feicode-fei-stylelint-config",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "homepage": "",
+  "license": "ISC",
+  "author": "yangif <19803006837@163.com>",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "stylelint": "^15.11.0",
+    "stylelint-scss": "^6.12.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

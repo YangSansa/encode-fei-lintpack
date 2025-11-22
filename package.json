@@ -16,11 +16,12 @@
     "test": "lerna run test",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "depoly": "bash depoly.sh",
+    "deploy": "bash deploy.sh",
     "publish": "lerna publish",
     "lint": "markdownlint read.md",
     "changelog": "conventional-changelog -p angular -i changelog.md -s",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "markdownlint": "^0.39.0",
