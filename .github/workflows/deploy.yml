@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
     push:
         branches:
-            - master 
+            - main 
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest  # 在最新的Ubuntu系统上运行

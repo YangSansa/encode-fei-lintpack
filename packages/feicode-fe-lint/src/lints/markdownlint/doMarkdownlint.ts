@@ -37,9 +37,9 @@ export async function doMarkdownlint(options: DoMarkdownlintOptions) {
         await Promise.all(
             Object.keys(results).map(filename => formatMarkdownFile(filename, results[filename])) ////没有返回值但是已经通过函数更改了文件
         )
-        for(const file in results){ //这段循环没有实际意义
+        /* for(const file in results){ //这段循环没有实际意义
             if(!Object.prototype.hasOwnProperty.call(results, file)) continue; 
-        }
+        } */
     }
     return formatMarkdownlintResults(results, options.quiet)
     
