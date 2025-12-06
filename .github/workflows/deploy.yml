@@ -24,15 +24,14 @@ jobs:
                   NODE_OPTIONS: --max_old_space_size=4096  #在执行Node.js命令前告诉它应该如何运行, 4G内存
 
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@4
+              uses: JamesIves/github-pages-deploy-action@4.4.2
               with:                  
-                  BRANCH: gh-pages   # 部署到gh-pages分支（GitHub Pages专用分支）
-                  FOLDER: docs/.vuepress/dist  # 要部署的文件夹
-                  CLEAN: true  # 清理部署目录
-                  CLEAN_EXCLUDE: |
-                    .nojekyll
-                    CNAME
-                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  #使用加密的访问令牌
+                   branch: gh-pages
+                   folder: dist
+                   clean: true
+                   git-config-name: 'GitHub Actions Bot'
+                   git-config-email: '41898282+github-actions[bot]@users.noreply.github.com'
+                   access_token: ${{ secrets.ACCESS_TOKEN }}  #使用加密的访问令牌
 
 
 
