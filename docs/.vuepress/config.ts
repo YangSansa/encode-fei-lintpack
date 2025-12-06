@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-    bundler: viteBundler(),
+    bundler: viteBundler(), // 使用vite打包
     lang: 'zh-CN',
     title: '我的技术博客',
     description: '记录学习与成长',  

@@ -1,0 +1,6 @@
+module.exports = {
+     extends: [ 
+        '<%= eslintType === 'index' ? 'encode-fe-eslint-config' :`encode-fe-eslint-config/${eslintType}` %>', 
+        <%_ if (enablePrettier) { _%> 'prettier', <%_ } _%> 
+     ],
+};

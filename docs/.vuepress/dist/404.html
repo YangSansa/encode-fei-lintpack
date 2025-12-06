@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.26" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>我的技术博客</title><meta name="description" content="记录学习与成长">
+    <link rel="preload" href="/fei-spec/assets/style-BbhbKhGM.css" as="style"><link rel="stylesheet" href="/fei-spec/assets/style-BbhbKhGM.css">
+    <link rel="modulepreload" href="/fei-spec/assets/app-C8jYEUmr.js"><link rel="modulepreload" href="/fei-spec/assets/404.html-CrZQY0aw.js">
+    <link rel="prefetch" href="/fei-spec/assets/index.html-CLKDbi3s.js" as="script"><link rel="prefetch" href="/fei-spec/assets/feicode-fei-lint.html-BryWPOes.js" as="script"><link rel="prefetch" href="/fei-spec/assets/css.html-D9Ea8RXF.js" as="script"><link rel="prefetch" href="/fei-spec/assets/html.html-i8PDrdQR.js" as="script"><link rel="prefetch" href="/fei-spec/assets/javascript.html-B-7hCyDz.js" as="script"><link rel="prefetch" href="/fei-spec/assets/node.html-DB4TdPl2.js" as="script"><link rel="prefetch" href="/fei-spec/assets/typescript.html-CovRWOMR.js" as="script"><link rel="prefetch" href="/fei-spec/assets/changelog.html-m3o0Tf2z.js" as="script"><link rel="prefetch" href="/fei-spec/assets/doc.html-CZiND-H2.js" as="script"><link rel="prefetch" href="/fei-spec/assets/git.html-B1NXSTxj.js" as="script"><link rel="prefetch" href="/fei-spec/assets/commitlint.html-Bv7IdaKl.js" as="script"><link rel="prefetch" href="/fei-spec/assets/eslint-plugin.html-BdFL98Ai.js" as="script"><link rel="prefetch" href="/fei-spec/assets/eslint.html-BxCN4ROR.js" as="script"><link rel="prefetch" href="/fei-spec/assets/markdownlint.html-Ca2sYEzG.js" as="script"><link rel="prefetch" href="/fei-spec/assets/stylelint.html-B5Tm8bj2.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-ff1b9fe4><main class="page" data-v-ff1b9fe4><div vp-content data-v-ff1b9fe4><h1 data-v-ff1b9fe4>404</h1><blockquote data-v-ff1b9fe4>There&#39;s nothing here.</blockquote><a class="route-link" href="/fei-spec/" data-v-ff1b9fe4>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/fei-spec/assets/app-C8jYEUmr.js" defer></script>
+  </body>
+</html>

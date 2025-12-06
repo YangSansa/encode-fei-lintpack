@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      // 为所有包创建别名
+      "feicode-fei-markdownlint-config": ["packages/markdownlint-config/index.json"],
+    }
+  },
+  "include": ["src/**/*"],
+  
+}

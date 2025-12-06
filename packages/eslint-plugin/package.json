@@ -1,0 +1,28 @@
+{
+  "name": "feicode-fe-eslint-plugin",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "homepage": "https://github.com/YangSansa/encode-fei-lintpack#readme",
+  "bugs": {
+    "url": "https://github.com/YangSansa/encode-fei-lintpack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangSansa/encode-fei-lintpack.git"
+  },
+  "license": "ISC",
+  "author": "feifei <19803006837@163.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "pnpm run test"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.2",
+    "require-all": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "jest": "^30.2.0"
+  }
+}
