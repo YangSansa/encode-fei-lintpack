@@ -24,7 +24,7 @@ jobs:
                   NODE_OPTIONS: --max_old_space_size=4096  #在执行Node.js命令前告诉它应该如何运行, 4G内存
 
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@4.4.2
+              uses: JamesIves/github-pages-deploy-action@v3.7.1
               with:                  
                    branch: gh-pages
                    folder: dist
