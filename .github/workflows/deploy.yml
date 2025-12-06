@@ -24,14 +24,13 @@ jobs:
                   NODE_OPTIONS: --max_old_space_size=4096  #在执行Node.js命令前告诉它应该如何运行, 4G内存
 
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v3.7.1
-              with:                  
-                   branch: gh-pages
-                   folder: dist
-                   clean: true
-                   git-config-name: 'GitHub Actions Bot'
-                   git-config-email: '41898282+github-actions[bot]@users.noreply.github.com'
-                   access_token: ${{ secrets.ACCESS_TOKEN }}  #使用加密的访问令牌
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                 github_token: ${{ secrets.GITHUB_TOKEN }}
+                 publish_dir: ./dist
+                 publish_branch: gh-pages
+                 user_name: 'github-actions[bot]'
+                 user_email: 'github-actions[bot]@users.noreply.github.com'
 
 
 
