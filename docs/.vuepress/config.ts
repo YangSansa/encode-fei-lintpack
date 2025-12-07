@@ -7,7 +7,7 @@ export default defineUserConfig({
     lang: 'zh-CN',
     title: '我的技术博客',
     description: '记录学习与成长',  
-    base:'/fei-spec/',  
+    base: process.env.BASE_PATH?.endsWith('/') ? process.env.BASE_PATH as `/${string}/` : '/',
     theme: defaultTheme({
         navbar: [
             { text: '首页', link: '/index.md' },

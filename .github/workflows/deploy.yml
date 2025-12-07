@@ -22,6 +22,7 @@ jobs:
                   pnpm run docs:build
               env:
                   NODE_OPTIONS: --max_old_space_size=4096  #在执行Node.js命令前告诉它应该如何运行, 4G内存
+                  BASE_PATH: /encode-fei-lintpack/
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
